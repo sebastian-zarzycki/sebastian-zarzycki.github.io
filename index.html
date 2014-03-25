@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>
+
+$.ajax({
+        async:false,
+        url: 'file.txt',
+        dataType: 'text',
+        success: function(data) 
+        {
+        $('#fileContent').append(data);
+            }
+        });
+		
+</script>
+</head>
+
+<body>
+	
+	<div id="fileContent" style="font-family:Courier New"></div>
+</body>
+</html>
