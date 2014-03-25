@@ -2,18 +2,17 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
-
-$.ajax({
-        async:false,
-        url: '/file.txt',
-        dataType: 'text',
-        success: function(data) 
-        {
-			window.alert(data);
-        	$('div#fileContent').append(data);
-        }
+$(document).ready(function() {
+	$.ajax({
+	        async:false,
+	        url: 'file.txt',
+	        dataType: 'text',
+	        success: function(data) 
+	        {
+	        	$("p#fileContent").append(data);
+	        }
+	});
 });
-		
 </script>
 </head>
 
