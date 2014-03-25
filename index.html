@@ -5,19 +5,20 @@
 
 $.ajax({
         async:false,
-        url: 'file.txt',
+        url: '/file.txt',
         dataType: 'text',
         success: function(data) 
         {
-        $('#fileContent').append(data);
-            }
-        });
+        	$('#fileContent').append(data);
+        }
+});
 		
 </script>
 </head>
 
 <body>
 	
-	<div id="fileContent" style="font-family:Courier New"></div>
+	<p>tu jest zawartość pliku</p>
+	<p id="fileContent" style="font-family:Courier New"></p>
 </body>
 </html>
