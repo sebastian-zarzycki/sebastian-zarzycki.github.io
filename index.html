@@ -9,12 +9,8 @@ $.ajax({
         dataType: 'text',
         success: function(data) 
         {
-			window.alert('yay');
-        	$('#fileContent').append(data);
-        },
-        error: function() 
-        {
-			window.alert('error');
+			window.alert(data);
+        	$('div#fileContent').append(data);
         }
 });
 		
