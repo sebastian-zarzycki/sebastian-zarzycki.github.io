@@ -9,7 +9,7 @@ $(document).ready(function() {
 	        dataType: 'text',
 	        success: function(data) 
 	        {
-	        	$("p#fileContent").append(data);
+	        	$("pre#fileContent").append(data);
 	        }
 	});
 });
@@ -19,6 +19,6 @@ $(document).ready(function() {
 <body>
 	
 	<p>tu jest zawartość pliku</p>
-	<p id="fileContent" style="font-family:Courier New"></p>
+	<pre id="fileContent" style="font-family:Courier New"></pre>
 </body>
 </html>
